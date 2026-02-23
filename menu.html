@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – The Kota King</title>
+    <link rel="stylesheet" href="kotaking.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="inner-container">
+            <h1>THE KOTA KING</h1>
+            <div class="header-logo">
+                <img src="images/logo.png" alt="Kota King Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count-header">0</span></a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="coupons.html">Coupons</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 class="section-title" style="margin-top:2.5rem;">Our Full Menu</h2>
+
+    <div class="menu-products">
+        <div class="menu-item">
+            <img src="images/food1.jpeg" alt="Kota Classic">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Kota Classic</div>
+                    <span class="price">R35</span>
+                </div>
+                <button class="buy" onclick="addToCart('kota-classic', 'Kota Classic', 35)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food2.jpeg" alt="Polony & Cheese">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Polony &amp; Cheese</div>
+                    <span class="price">R48</span>
+                </div>
+                <button class="buy" onclick="addToCart('polony-cheese', 'Polony & Cheese', 48)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food3.jpeg" alt="Double Stack">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Double Stack</div>
+                    <span class="price">R55</span>
+                </div>
+                <button class="buy" onclick="addToCart('double-stack', 'Double Stack', 55)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food4.jpeg" alt="Chicken Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Chicken Kota</div>
+                    <span class="price">R52</span>
+                </div>
+                <button class="buy" onclick="addToCart('chicken-kota', 'Chicken Kota', 52)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food5.jpeg" alt="Russian & Chips">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Russian &amp; Chips</div>
+                    <span class="price">R65</span>
+                </div>
+                <button class="buy" onclick="addToCart('russian-chips', 'Russian & Chips', 65)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food6.jpeg" alt="Beef & Cheese">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Beef &amp; Cheese</div>
+                    <span class="price">R70</span>
+                </div>
+                <button class="buy" onclick="addToCart('beef-cheese', 'Beef & Cheese', 70)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food7.jpeg" alt="Spicy Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Spicy Kota</div>
+                    <span class="price">R58</span>
+                </div>
+                <button class="buy" onclick="addToCart('spicy-kota', 'Spicy Kota', 58)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food8.jpeg" alt="Steak Special">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Steak Special</div>
+                    <span class="price">R75</span>
+                </div>
+                <button class="buy" onclick="addToCart('steak-special', 'Steak Special', 75)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food9.jpeg" alt="Veg Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Veg Kota</div>
+                    <span class="price">R40</span>
+                </div>
+                <button class="buy" onclick="addToCart('veg-kota', 'Veg Kota', 40)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food10.jpeg" alt="Boerewors Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Boerewors Kota</div>
+                    <span class="price">R62</span>
+                </div>
+                <button class="buy" onclick="addToCart('boerewors-kota', 'Boerewors Kota', 62)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food11.jpeg" alt="Egg & Bacon Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Egg &amp; Bacon Kota</div>
+                    <span class="price">R50</span>
+                </div>
+                <button class="buy" onclick="addToCart('egg-bacon', 'Egg & Bacon Kota', 50)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food12.jpeg" alt="Atchar Bomb">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Atchar Bomb</div>
+                    <span class="price">R45</span>
+                </div>
+                <button class="buy" onclick="addToCart('atchar-bomb', 'Atchar Bomb', 45)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food13.jpeg" alt="King Size Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">King Size Kota</div>
+                    <span class="price">R85</span>
+                </div>
+                <button class="buy" onclick="addToCart('king-size', 'King Size Kota', 85)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food14.jpeg" alt="Mini Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Mini Kota</div>
+                    <span class="price">R28</span>
+                </div>
+                <button class="buy" onclick="addToCart('mini-kota', 'Mini Kota', 28)">Add</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/food15.jpeg" alt="Cheese Melt Kota">
+            <div class="item-details">
+                <div>
+                    <div class="item-name">Cheese Melt Kota</div>
+                    <span class="price">R55</span>
+                </div>
+                <button class="buy" onclick="addToCart('cheese-melt', 'Cheese Melt Kota', 55)">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <p><strong>THE KOTA KING</strong> – Hot &amp; Fresh Every Time</p>
+        <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <span class="footer-sep">•</span>
+            <a href="locations.html">Find Us</a>
+            <span class="footer-sep">•</span>
+            <a href="https://wa.me/123456789" target="_blank" title="WhatsApp Us">
+                <svg class="footer-wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+            </a>
+        </div>
+        <p style="margin-top:1rem; opacity:0.7; font-size:0.9rem;">© 2025 KOTA KING – Made with pride in Cape Town</p>
+    </footer>
+
+    <script src="kotaking.js"></script>
+
+</body>
+</html>
